@@ -13,6 +13,7 @@ body {
   display: flex;
 }
 
+
 .navSection {
   max-width: 296px;
   width: 100%;
@@ -20,7 +21,7 @@ body {
   align-items: center;
   background: #14171f;
   padding: 24px 0;
-  align-content: space-between;
+  justify-content: space-between;
   flex-direction: column;
   gap: 48px;
 }
@@ -120,6 +121,8 @@ body {
   justify-content: center;
 }
 
+
+
 .mainContainer {
   display: flex;
   width: 100%;
@@ -135,12 +138,15 @@ body {
   width: 100%;
   gap: 24px;
 }
-
-@media screen and (max-width: 768px) {
-  .mainWidthDiv {
-    padding: 32px 0;
-  }
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 1080px;
+  width: 100%;
+  gap: 24px;
 }
+
+
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .mainWidthDiv {
@@ -156,6 +162,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+
 
 .mainNavLeft {
   display: flex;
@@ -417,7 +424,7 @@ body {
 @media screen and (max-width: 768px) {
   .persInfoContainer {
     width: 100%;
-    max-width: none;
+    max-width: unset;
   }
 }
 
@@ -479,7 +486,7 @@ body {
 @media screen and (max-width: 768px) {
   .AdditionalInfoDiv {
     width: 100%;
-    max-width: none;
+    max-width: unset;
   }
 }
 
@@ -546,7 +553,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .allABoutContainer {
     width: 100%;
-    max-width: none;
+    max-width: unset;
   }
 }
 
@@ -641,4 +648,34 @@ body {
 .whiteoslon {
   border-radius: 8px;
   background: none;
+}
+
+.aboutDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 8px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.aboutcontent {
+  display: flex;
+  justify-content: space-between;
+  color: #2F2F2F;
+  font-size: 16px;
+}
+
+.words {
+  color: #2F2F2F;
+  font-size: 14px;
+}
+
+.aboutText {
+border-radius: 8px;
+border: 1px solid #C7C7C7;
+padding: 12px 16px;
+color: #666;
+font-size: 14px;
+
 }
